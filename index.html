@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+      color: #222;
+    }
+    header {
+      background-color: #0b2c49;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 1.5s ease;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      animation: rainbow 3s infinite;
+    }
+    @keyframes rainbow {
+      0%{color:red} 20%{color:orange} 40%{color:yellow} 60%{color:green} 80%{color:blue} 100%{color:purple}
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .button {
+      padding: 10px 20px;
+      background: #0b2c49;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      margin: 10px 5px;
+    }
+    .button:hover {
+      background: #144e7b;
+      transform: scale(1.05);
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.4s;
+    }
+    .card:hover {
+      transform: rotateX(4deg) scale(1.02);
+    }
+    .ai-float-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0b2c49;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Website Vintage Class</h1>
+    <p style="font-style: italic; margin-top: 10px">Website ini akan terus ditingkatkan oleh Ikyy dan Adit</p>
+  </header>  <section>
+    <div style="text-align:center">
+      <button class="button" onclick="toggleSection('identitas')">Identitas Siswa</button>
+      <button class="button" onclick="toggleSection('futsal')">Pemain Futsal</button>
+      <button class="button" onclick="toggleSection('ranking')">Ranking</button>
+      <button class="button" onclick="toggleSection('perokok')">Ranking Perokok</button>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScvSAq8G5Hi6UwrfQrpaRTQOjxlkJ0OgDmPaF6tGER-L52PUQ/viewform" target="_blank">Kirim Masukan</a>
+      <a class="button" href="https://wa.me/62895321345547?text=Halo%20Kak%2C%20saya%20mau%20kasih%20saran%20untuk%20website%20Vintage%20Class" target="_blank">Hubungi Kami</a>
+    </div>
+  </section>  <section id="identitas" style="display:none">
+    <h2 style="text-align:center; margin-bottom: 20px">Total siswa Vintage Class adalah 28 orang</h2>
+    <div class="card">Nama: Syahrul Habibi<br>TTL: 22-2011-8<br>Alamat: TBH<br>Hobi: Bola<br>Makanan: Nasi<br>Minuman: Susu Coklat<br>Aktivitas Favorit: Main di luar</div>
+    <div class="card">Nama: Aulia Rahman<br>TTL: 14-2011-03<br>Alamat: TBH<br>Hobi: Gamers<br>Makanan: Kaviar<br>Minuman: Kopi Panas<br>Aktivitas Favorit: Jalan-jalan</div>
+    <div class="card">Nama: Muhammad Ragil Alhafiz<br>TTL: 03-2011-4<br>Alamat: TBH<br>Hobi: Futsal<br>Makanan: Nasi<br>Minuman: Air Putih<br>Aktivitas Favorit: Tidur</div>
+    <div class="card">Nama: Muhammad Satria Alfaza<br>TTL: 11-2011-1<br>Alamat: TBH<br>Hobi: Futsal<br>Makanan: Ayam Richeese<br>Minuman: Milo Dingin<br>Aktivitas Favorit: Keluar Rumah</div>
+    <!-- Tambah data lainnya jika mau -->
+  </section>  <section id="futsal" style="display:none">
+    <h2 style="text-align:center">Daftar Pemain Futsal</h2>
+    <div class="card">1. Muhammad Insan Kamil</div>
+    <div class="card">2. Muhammad Rizky</div>
+    <div class="card">3. Ahmad Zaky Noer</div>
+    <div class="card">4. Muhammad Satria Alfaza</div>
+    <div class="card">5. Muhammad Ragil Alhafiz</div>
+    <div class="card">6. Rio Dwi Febrianto</div>
+    <div class="card">7. Haikal Akbar</div>
+    <div class="card">8. Muhammad Aditya Saputra</div>
+    <div class="card">9. M. Haikal Dwi</div>
+    <div class="card">10. Aulia Rahman</div>
+    <div class="card">11. Muhammad Rizky Fahrianto</div>
+    <div class="card">12. M. Alfath Riziq</div>
+  </section>  <section id="ranking" style="display:none">
+    <h2 style="text-align:center">Ranking Kelas Terakhir</h2>
+    <div class="card">1. Miska Novalia</div>
+    <div class="card">2. Muhammad Aditya Saputra</div>
+    <div class="card">3. Putri Zakiya Azzahra</div>
+    <div class="card">4. M. Haikal Dwi</div>
+  </section>  <section id="perokok" style="display:none">
+    <h2 style="text-align:center; color: red">Ranking Perokok Kelas (Jangan Ditiru!)</h2>
+    <div class="card">1. Aulia Rahman - Setiap hari merokok bahkan saat mau futsal, katanya bisa 1 jam futsal tanpa henti, punya paru-paru 3?</div>
+    <div class="card">2. Aprilio Habibi - Lumayan, tapi masih tahu waktu dan tempat</div>
+    <div class="card">3. Haikal Akbar - Katanya sih ngikut-ngikut aja</div>
+  </section>  <footer>
+    <p>Jangan lupa follow IG: <a href="https://www.instagram.com/_vintage.class" target="_blank">@_vintage.class</a></p>
+    <p>Terima kasih telah mampir dan melihat website Vintage Class</p>
+  </footer><button class="ai-float-button" onclick="window.open('https://chat.openai.com', '_blank')">AI</button>
+
+  <script>
+    function toggleSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(s => { if (s.id !== id) s.style.display = 'none'; });
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+  </script></body>
+</html>
